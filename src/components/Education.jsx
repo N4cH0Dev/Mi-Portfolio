@@ -1,7 +1,7 @@
 import React from "react";
 
-const SectionEducation = () => {
+const Education = () => {
   return <div>SectionEducation</div>;
 };
 
-export default SectionEducation;
+export default Education;

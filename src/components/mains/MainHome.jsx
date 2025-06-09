@@ -1,14 +1,14 @@
 import React from "react";
 import CardInfo from "../CardInfo";
-import SectionAbout from "../SectionAbout";
-import SectionProjects from "../SectionProjects";
+import About from "../About";
+import Projects from "../Projects";
 
 const MainHome = () => {
   return (
     <div className="main-container">
       <CardInfo />
       <hr />
-      <SectionAbout />
+      <About />
       <hr />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
-const SectionProjects = () => {
+const Projects = () => {
   return <div>SectionProjects</div>;
 };
 
-export default SectionProjects;
+export default Projects;
