@@ -69,6 +69,7 @@
   gap: 2.5rem;
   width: 100%;
   margin-top: 2rem;
+  position: relative;
 }
 .data-card-aside {
   flex: 0 0 260px;
@@ -83,7 +84,7 @@
   min-width: 200px;
   height: 100%;
   position: relative;
-  margin-left: 2rem;
+  left: 2rem;
 }
 .data-card-article {
   flex: 1 1 0%;
@@ -95,30 +96,77 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
-  margin-right: 2rem;
+  width: 50rem;
+  height: 100%;
+  position: relative;
+  margin-right: 22rem;
 }
 .data-card-article h2 {
   color: #e0ffe0;
   margin-bottom: 3rem;
+  text-align: justify;
 }
 .data-card-article p {
   color: #fff;
   font-size: 1.1rem;
-  text-align: left;
-  justify-content: center;
+  text-align: justify;
+}
+@media (max-width: 1200px) {
+  .data-card-article {
+    width: 90vw;
+    padding: 2rem 1rem;
+  }
+  .data-card {
+    padding: 2rem 1rem;
+  }
 }
 @media (max-width: 900px) {
-  .About {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .SectionAbout {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
   }
-  .data-card-aside,
-  .data-card-article {
-    width: 90%;
-    max-width: none;
+  .Container-About {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .data-card,
+  .data-card-article,
+  .data-card-aside {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    width: 95%;
     min-width: unset;
+    max-width: none;
+  }
+  .About {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .data-card h1,
+  .data-card-article h2 {
+    font-size: 1.2rem;
+  }
+  .data-card,
+  .data-card-article,
+  .data-card-aside {
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+  .Container-About h2 {
+    font-size: 1.1rem;
+  }
+  .data-card-aside {
+    padding: 1rem 0.5rem;
+    margin-inline: 0;
   }
 }
 .About .data-card h2 {
@@ -139,10 +187,25 @@
   align-items: center;
   gap: 0.7rem;
   position: relative;
-  left: 0cqb;
+  margin-inline: 2rem;
 }
 
+.data-card-aside h2,
+.data-card-aside ul {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
 .data-card-aside h2 {
-  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
   color: #e0ffe0;
+}
+.data-card-aside ul {
+  padding-left: 0;
+  list-style: none;
+}
+.data-card-aside li {
+  text-align: center;
 }

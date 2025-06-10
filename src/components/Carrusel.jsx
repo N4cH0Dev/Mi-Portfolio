@@ -1,12 +1,12 @@
 import React from "react";
 
-const Projects = () => {
+const Carrusel = () => {
   return (
-    <div className="container-projects">
+    <div>
       <div
-        id="carouselExampleAutoplaying"
+        id="carouselExampleControlsNoTouching"
         class="carousel slide"
-        data-bs-ride="carousel"
+        data-bs-touch="false"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -22,7 +22,7 @@ const Projects = () => {
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-target="#carouselExampleControlsNoTouching"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,7 +31,7 @@ const Projects = () => {
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-target="#carouselExampleControlsNoTouching"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -42,4 +42,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Carrusel;

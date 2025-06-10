@@ -10,6 +10,7 @@ const MainHome = () => {
       <hr />
       <About />
       <hr />
+      <Projects />
     </div>
   );
 };

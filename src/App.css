@@ -1,11 +1,16 @@
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(-45deg, #2c3e50, #6c7a89, #a9cce3, #2c3e50);
   background-size: 300% 300%;
   animation: gradientMove 15s ease infinite;
   font-family: "Switzer", sans-serif;
   color: #fcfdfe;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
 }
 
 @keyframes gradientMove {
