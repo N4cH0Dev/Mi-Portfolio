@@ -37,18 +37,6 @@
   color: #e0ffe0;
 }
 
-.SectionAbout {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.SectionAbout .data-card {
-  padding: 3rem 2.5rem;
-  text-align: center;
-  margin-inline: 2rem;
-}
-
 .Container-About {
   display: flex;
   flex-direction: column;
@@ -208,4 +196,7 @@
 }
 .data-card-aside li {
   text-align: center;
+}
+#carouselExample img {
+  height: 50vh;
 }
