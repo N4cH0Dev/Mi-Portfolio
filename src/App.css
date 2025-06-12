@@ -4,7 +4,7 @@ body {
   background: linear-gradient(-45deg, #2c3e50, #6c7a89, #a9cce3, #2c3e50);
   background-size: 300% 300%;
   animation: gradientMove 15s ease infinite;
-  font-family: "Switzer", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fcfdfe;
 }
 @media (max-width: 600px) {
@@ -24,12 +24,9 @@ body {
     background-position: 0% 50%;
   }
 }
-@font-face {
-  font-family: "Switzer";
-  src: url("./fonts/Switzer-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Eliminada la fuente Switzer por problemas de compatibilidad */
 hr {
   border: none;
   height: 2px;

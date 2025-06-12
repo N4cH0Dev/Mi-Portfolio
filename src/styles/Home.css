@@ -197,6 +197,39 @@
 .data-card-aside li {
   text-align: center;
 }
-#carouselExample img {
-  height: 50vh;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+}
+.projects-container .project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 1rem);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.projects h2 {
+  color: #e0ffe0;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-bottom: 2 rem;
+}
+.projects-container .project-card h3 {
+  color: #e0ffe0;
+  margin-bottom: 0.5rem;
 }

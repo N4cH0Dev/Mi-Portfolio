@@ -4,34 +4,30 @@ import f9 from "../images/F9.jpg";
 const Projects = () => {
   return (
     <div className="projects">
+      <h2>Proyectos</h2>
       <div className="projects-container">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={f9} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={fs} class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div className="project-card">
+          <img src={fs} alt="Full Stack Project" />
+          <h3>FS Centro de entrenamiento</h3>
+          <p>
+            <p>
+              Sistema dividido en BackOffice y portal para gestión de usuarios y
+              profesores. Automatiza asistencias, vencimientos y facturación.
+              Hecho con GeneXus 18 (Java), autenticación GAM y MySQL.
+            </p>
+          </p>
+        </div>
+        <div className="project-card">
+          <img src={f9} alt="F9 Project" />
+          <h3>F9</h3>
+          <p>
+            <p>
+              Sistema integral para gestión de gimnasio con socios,
+              entrenamientos, pagos y asistencias. Incluye lógica de
+              vencimientos y perfiles con autenticación GAM. Desarrollado con
+              GeneXus 18 (Java) y base de datos MySQL.
+            </p>
+          </p>
         </div>
       </div>
     </div>
