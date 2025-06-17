@@ -127,3 +127,15 @@
   background: transparent; /* Estado inicial */
   transition: background 0.3s ease;
 }
+.logo-rotate {
+  animation: rotateLogo 1s ease-in-out;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

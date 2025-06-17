@@ -1,18 +1,45 @@
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: linear-gradient(-45deg, #2c3e50, #6c7a89, #a9cce3, #2c3e50);
-  background-size: 300% 300%;
-  animation: gradientMove 15s ease infinite;
-  font-family: "Montserrat", sans-serif;
-  color: #fcfdfe;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 @media (max-width: 600px) {
   body {
     font-size: 0.95rem;
   }
 }
 
+/* Light Gradient */
+.light-gradient {
+  background: linear-gradient(-45deg, #2c3e50, #6c7a89, #a9cce3, #2c3e50);
+  background-size: 200% 200%;
+  animation: gradientFlow 10s ease infinite;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Dark Gradient */
+.dark-gradient {
+  background: linear-gradient(135deg, #000000, #1a1a1a, #2c2c2c, #3d3d3d);
+  background-size: 200% 200%;
+  animation: gradientFlow 10s ease infinite;
+  min-height: 100vh;
+  color: #fcfdfe;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Animación para light y dark */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animación para body */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -24,9 +51,7 @@ body {
     background-position: 0% 50%;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-/* Eliminada la fuente Switzer por problemas de compatibilidad */
 hr {
   border: none;
   height: 2px;

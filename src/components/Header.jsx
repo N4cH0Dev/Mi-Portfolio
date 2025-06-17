@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
-import logo from "../images/Logo.png";
+import logoLight from "../images/Logo.png";
+import logoDark from "../images/LogoDark.png"; // asegurate de tener esta imagen
+import { useThemeStore } from "../store/useThemeStore";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isRotating, setIsRotating] = useState(false);
+  const { isDark, toggleTheme } = useThemeStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,14 +21,22 @@ const Header = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  const handleLogoClick = () => {
+    setIsRotating(true);
+    toggleTheme();
+    setTimeout(() => setIsRotating(false), 1000);
+  };
+
   return (
     <header
       className={`header${scrolled ? " header--scrolled" : " header--top"}`}
     >
-      <div className="header__logo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
+      <div className="header__logo" onClick={handleLogoClick}>
+        <img
+          src={isDark ? logoDark : logoLight}
+          alt="logo"
+          className={isRotating ? "logo-rotate" : ""}
+        />
       </div>
 
       <button className="header__toggle" onClick={toggleMenu}>
@@ -44,7 +56,7 @@ const Header = () => {
               className="Link"
               onClick={() => setMenuOpen(false)}
             >
-              Sobre mi
+              Sobre mí
             </Link>
           </li>
           <li>
