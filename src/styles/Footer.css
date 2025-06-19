@@ -1,10 +1,12 @@
 footer {
   display: flex;
-  flex-direction: column;
+  margin-top: 8vh;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   background: rgba(44, 62, 80, 0.5);
   color: #fcfdfe;
-  font-size: 1rem;
+  font-size: 3rem;
   padding: 20px 0.5rem;
   text-align: center;
 }
@@ -12,5 +14,23 @@ footer {
   footer {
     font-size: 0.9rem;
     padding: 0.5rem 0.2rem;
+  }
+}
+
+.flex-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  flex-wrap: wrap;
+}
+
+a {
+  font-size: 2rem;
+  color: #fcfdfe;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #fbe9ca;
   }
 }
